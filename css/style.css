@@ -1,0 +1,15 @@
+:root {
+    /* Color Palette - Premium Theme */
+    --bg-primary: rgba(255, 255, 255, 0.285); 
+    /* Black */
+    --bg-secondary:  rgba(0, 0, 0, 0.721);
+    --text-primary: #ffffff;
+    --text-secondary: #a0a0a07b;
+    --accent-color: #7bcfcf;
+    /* Fonts */
+    --font-main: 'Nohemi', sans-serif;
+
+}
+body{ 
+    background-color: var(--bg-primary);
+}
