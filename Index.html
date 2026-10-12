@@ -4,36 +4,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bulumko Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Bulumko Majaja | Software Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
 </head> 
 
 <body>
-    <header>
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#skills">Projects</a></li>
-            <li><a href="#about">About</a></li>
-        </ul>
-    </nav>
-    </header>
+    <header class="site-header">
+        <a class="brand" href="#home">
+            <span class="brand-name">Bulumko Majaja</span>
+            <span class="brand-role">Software Developer</span>
+        </a>
+        <!-- not necessary but is a button for mobile menus -->
+        <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+        <!-- navigation menu is simplified, home is your name and jumps to top already-->
+        <nav id="nav">
+            <ul>
+                <!-- should jump down to the required section -->
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+   </header>
 
-<section title="Home">
+<main> 
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <p class="eyebrow">Building digital experiences</p>
+            <h1>I Build.<br>I Learn.<br><span class="red">I Create.</span></h1>
+            <p class="lead">Software developer building web applications, solving problems and turning ideas into reality.</p>
+            <div class="btn-row">
+                <a class="btn btn-solid" href="#projects">View my projects</a>
+                <a class="btn btn-outline" href="#about">About me</a>
+            </div>
+
+            <div class="socials">
+                <a href="https://github.com/bmajaja">GitHub</a>
+                <a href="https://linkedin.com/in/bmajaja">LinkedIn</a>
+                <a href="mailto:bmajaja.dev@gmail.com">Email</a>
+            </div>
+        </div>
+
+        </section>  
+
+        <section id="about" class="panel">
+            <p class="count">02 / 05</p>
+            <h2>About <span class="red">me</span></h2>
+            <div class="about-grid">
+                <p>I'm a developer who enjoys turning ideas into working products. I'm currently building my skills in HTML, CSS, JavaScript and Python, while creating projects that challenge me to learn something new.</p>
+                <div class="about-img" role="img" aria-label="Johannesburg skyline"></div>
+            </div>
+
+            <div class="facts">
+           
+                <div class="fact"><h3>Currently learning</h3><p>HTML, CSS, JS, Python</p></div>
+                <div class="fact"><h3>Goal</h3><p>Build software people actually use.</p></div>
+
+            </div>
+        </section>
+<!-- note for projects section leave out for now..we will come back once we've learnt jss -->
+        <section id="projects" class="panel">
+            <p class="count">03 / 05</p>
+            <h2>My <span class="red">projects</span></h2>
+            
+            </div>     
+
     <p>Building Digital Experiences </p>
     <h1>I Build.</br>
         I Learn.</br>
         I Create.
     </h1>
     <p>Software developer building web applications, solving problems and turning ideas into reality</p>
-    <div>
-        <button>View my projects</button>
-        
+    <div class="hero-div-btn">
+        <a href="#projects" class="hero-btn">View my projects</a>
+        <a href="#about" class="hero-btn">About me</a>
     </div>
 </section>
 
+<section title="skills" class="skill-list">
+    <!-- check and update your skills as you learn them-->
+    <h2>Skills</h2>
+    <!-- note that I added card list, this will create a grid of skill icons -->
+    <ul class="card-list">
+        <><img src="assets/icons/html.png" alt="HTML"></li>
+        <li><img src="assets/icons/css.png" alt="CSS"></li>
+        <li><img src="assets/icons/js.png" alt="JavaScript"></li>
+    </ul>
 
-<section title="Projects">
+    <!-- check and update your tools as you learn them-->
+    <h2>Tools</h2>
+    <!-- note that I added card list, this will create a grid of tool icons -->
+    <ul class="card-list">
+        <li><img src="assets/icons/git.png" alt="Git"></li>
+        <li><img src="assets/icons/wix.png" alt="Wix"></li>
+        <li><img src="assets/icons/squarespace.png" alt="Squarespace"></li>
+        <li><img src="assets/icons/wordpress.png" alt="WordPress"></li>
+        <li><img src="assets/icons/figma.png" alt="Figma"></li>
+        <li><img src="assets/icons/vscode.png" alt="VS Code"></li>
+    </ul>
+
+    
+    </section>
+
+<section title="projects" class="projects">
 
     <div>
        <h2>Projects</h2>
@@ -45,38 +123,41 @@
        </ul>
     
     </div>
+</section>
+
+<section title="about" class="about">
+    <div class="contacts">
+        <p>Have a project in mind? Or just want to say hello? Feel free to reach out.</p>
+        <!-- note that I added card list, this will create a grid of contact icons -->
+        <ul class="card-list">
+            <!-- remember to update these links with your actual contact information -->
+            <li><a href="mailto:bulumko@example.com">Email</a></li>
+            <li><a href="https://github.com/bmajaja" target="_blank">GitHub</a></li>
+            <li><a href="https://linkedin.com/in/bmajaja" target="_blank">LinkedIn</a></li>
+        </ul>
+    </div>
+
+    <!-- add actual about me text-->
+    <div class="about-me">
+      <h2>About Me</h2>
+    <p>Hello, I'm Bulumko! I'm a software developer who treats every project like a new trail to explore.</p>
+    <p>I build web applications, chase down tricky problems, and turn ideas into working products. I'm currently sharpening my skills in HTML, CSS, JavaScript and Python, and I pick projects that push me out of my comfort zone, because that's where the best learning happens.</p>
+    <p>My toolkit includes web development, coding and Microsoft Office, and I do my best work as part of a team, sharing the journey and the wins.</p>
+    <p>Off the keyboard, I've never been one to sit still. I represented the Eastern Cape on the provincial basketball team in 2010, lent my voice to a Nedbank recording in 2016, and earned a medal at the 15k marathon hosted by Hot 91.9 in 2018. That same year, I stepped up to audition at Mix FM 93.8. Whether it's a new language, a new course or a new stage, I'm always ready for the next challenge.</p>
     
-    <div>
-<h2>Skills</h2>
-
-<p>Frontend, Backend, Tools</p>
-<p>Microsoft ms office
-Web Development Coding
-Successful working in a team environment.</p>Voice Recording for Nedbank 2016
-Basket Ball Eastern Cape
-Provincial Team in 2010. Medal for
-15k marathon hosted by Hot 91.9
-2018. Went for a radio audition at
-mix fm 93.8 2018</p> 
+    
     </div>
-
-</section>
-
-<section title="About Me">
-    <div>
- <h2>About Me</h2>
-    <p>Hello, I'm Bulumko! and I'm a software developer.</p>
-    </div>
-
-    <div>  
-     <h2>Contact Me</h2>
-    <p>Email: bulumko@example.com</p> 
-    </div>
-
+    <!-- in the future you will add experience here -->
 </section>
 
 
-<footer><p>2026 Bulumko all rights reserved</p></footer>
+<footer>
+    <span class="brand-name">Bulumko Majaja</span>
+    <!-- changed footer sentence, this sentence changes every year you make changes to the site-->
+    <p>&copy; 2026. All rights reserved.</p>
+</footer>
+<!-- added link to javascript -->
+<script src="js/script.js"></script>
 </body>
 
 </html>
