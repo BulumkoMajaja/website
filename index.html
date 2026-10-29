@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bulumko Majaja | Software Developer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./css/style.css">
-</head> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Fonts the CSS actually uses: Bebas Neue (headings) and Poppins (body) -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
 
 <body>
     <header class="site-header">
@@ -17,12 +18,10 @@
             <span class="brand-name">Bulumko Majaja</span>
             <span class="brand-role">Software Developer</span>
         </a>
-        <!-- not necessary but is a button for mobile menus -->
+        <!-- Mobile menu button (toggle the "open" class on #nav in js/script.js) -->
         <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
-        <!-- navigation menu is simplified, home is your name and jumps to top already-->
         <nav id="nav">
             <ul>
-                <!-- should jump down to the required section -->
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -30,134 +29,153 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-   </header>
+    </header>
 
-<main> 
-    <section id="home" class="hero">
-        <div class="hero-text">
-            <p class="eyebrow">Building digital experiences</p>
-            <h1>I Build.<br>I Learn.<br><span class="red">I Create.</span></h1>
-            <p class="lead">Software developer building web applications, solving problems and turning ideas into reality.</p>
-            <div class="btn-row">
-                <a class="btn btn-solid" href="#projects">View my projects</a>
-                <a class="btn btn-outline" href="#about">About me</a>
+    <main>
+        <!-- HOME -->
+        <section id="home" class="hero">
+            <div class="hero-text">
+                <p class="eyebrow">Building digital experiences</p>
+                <h1>I Build.<br>I Learn.<br><span class="red">I Create.</span></h1>
+                <p class="lead">Software developer building web applications, solving problems and turning ideas into reality.</p>
+                <div class="btn-row">
+                    <a class="btn btn-solid" href="#projects">View my projects</a>
+                    <a class="btn btn-outline" href="#about">About me</a>
+                </div>
+
+                <!-- TODO: replace the Instagram link with your real profile -->
+                <div class="socials">
+                    <a href="https://github.com/bmajaja">GitHub</a>
+                    <a href="https://www.instagram.com/">Instagram</a>
+                    <a href="https://www.linkedin.com/in/bulumko-majaja-8252b7217">LinkedIn</a>
+                    <a href="https://www.facebook.com/bulumko.majaja">Facebook</a>
+                    <a href="mailto:bmajaja.dev@gmail.com">Email</a>
+                </div>
             </div>
+        </section>
 
-            <div class="socials">
-                <a href="https://github.com/bmajaja">GitHub</a>
-                <a href="https://linkedin.com/in/bmajaja">LinkedIn</a>
-                <a href="mailto:bmajaja.dev@gmail.com">Email</a>
-            </div>
-        </div>
-
-        </section>  
-
+        <!-- ABOUT -->
         <section id="about" class="panel">
             <p class="count">02 / 05</p>
             <h2>About <span class="red">me</span></h2>
             <div class="about-grid">
-                <p>I'm a developer who enjoys turning ideas into working products. I'm currently building my skills in HTML, CSS, JavaScript and Python, while creating projects that challenge me to learn something new.</p>
+                <div class="about-text">
+                    <p>I'm a developer who enjoys turning ideas into working products. I'm currently building my skills in HTML, CSS, JavaScript and Python, while creating projects that challenge me to learn something new.</p>
+                    <p>I build web applications, chase down tricky problems, and turn ideas into working products. I like picking projects that push me out of my comfort zone, because that's where the best learning happens.</p>
+                    <p>My toolkit includes web development, coding, Microsoft Office, Squarespace, Wix, WordPress, Canva and Figma. I do my best work as part of a team, sharing the journey and the wins.</p>
+                    <p>Off the keyboard, I've never been one to sit still. I represented the Eastern Cape on the provincial basketball team in 2010, lent my voice to a Nedbank recording in 2016, and earned a medal at the 15k marathon hosted by Hot 91.9 in 2018. Whether it's a new language, a new course or a new stage, I'm always ready for the next challenge.</p>
+                </div>
+
                 <div class="about-img" role="img" aria-label="Johannesburg skyline"></div>
             </div>
 
             <div class="facts">
-           
-                <div class="fact"><h3>Currently learning</h3><p>HTML, CSS, JS, Python</p></div>
-                <div class="fact"><h3>Goal</h3><p>Build software people actually use.</p></div>
-
+                <div class="fact">
+                    <h3>Currently learning</h3>
+                    <p>Node.js, React, Vue, PHP, JS, Python</p>
+                </div>
+                <div class="fact">
+                    <h3>Goal</h3>
+                    <p>Build software people actually use.</p>
+                </div>
             </div>
         </section>
-<!-- note for projects section leave out for now..we will come back once we've learnt jss -->
+
+        <!-- PROJECTS -->
         <section id="projects" class="panel">
             <p class="count">03 / 05</p>
             <h2>My <span class="red">projects</span></h2>
-            
-            </div>     
 
-    <p>Building Digital Experiences </p>
-    <h1>I Build.</br>
-        I Learn.</br>
-        I Create.
-    </h1>
-    <p>Software developer building web applications, solving problems and turning ideas into reality</p>
-    <div class="hero-div-btn">
-        <a href="#projects" class="hero-btn">View my projects</a>
-        <a href="#about" class="hero-btn">About me</a>
-    </div>
-</section>
+            <h3>Active projects</h3>
+            <ul class="project-list">
+                <li>Weather App</li>
+                <li>Football Stats Dashboard</li>
+            </ul>
+        </section>
 
-<section title="skills" class="skill-list">
-    <!-- check and update your skills as you learn them-->
-    <h2>Skills</h2>
-    <!-- note that I added card list, this will create a grid of skill icons -->
-    <ul class="card-list">
-        <><img src="assets/icons/html.png" alt="HTML"></li>
-        <li><img src="assets/icons/css.png" alt="CSS"></li>
-        <li><img src="assets/icons/js.png" alt="JavaScript"></li>
-    </ul>
+        <!-- SKILLS + TOOLS -->
+        <section id="skills" class="panel">
+            <p class="count">04 / 05</p>
+            <h2>My <span class="red">skills</span></h2>
 
-    <!-- check and update your tools as you learn them-->
-    <h2>Tools</h2>
-    <!-- note that I added card list, this will create a grid of tool icons -->
-    <ul class="card-list">
-        <li><img src="assets/icons/git.png" alt="Git"></li>
-        <li><img src="assets/icons/wix.png" alt="Wix"></li>
-        <li><img src="assets/icons/squarespace.png" alt="Squarespace"></li>
-        <li><img src="assets/icons/wordpress.png" alt="WordPress"></li>
-        <li><img src="assets/icons/figma.png" alt="Figma"></li>
-        <li><img src="assets/icons/vscode.png" alt="VS Code"></li>
-    </ul>
+            <div class="card-list">
+                <div class="card">
+                    <img src="assets/icons/html.png" alt="HTML">
+                    <p>HTML</p>
+                </div>
+                <div class="card">
+                    <img src="assets/icons/css.png" alt="CSS">
+                    <p>CSS</p>
+                </div>
+                <div class="card">
+                    <img src="assets/icons/js.png" alt="JavaScript">
+                    <p>JavaScript</p>
+                </div>
+            </div>
 
-    
-    </section>
+            <h2 class="sub-heading">Tools</h2>
 
-<section title="projects" class="projects">
+            <!-- All tool cards live inside ONE card-list wrapper so they flow across -->
+            <div class="card-list">
+                <div class="card">
+                    <img src="assets/icons/git.png" alt="Git">
+                    <p>Git</p>
+                </div>
+                <div class="card">
+                    <img src="assets/icons/wix.png" alt="Wix">
+                    <p>Wix</p>
+                </div>
+                <div class="card">
+                    <img src="assets/icons/squarespace.png" alt="Squarespace">
+                    <p>Squarespace</p>
+                </div>
+                <div class="card">
+                    <img src="assets/icons/wordpress.png" alt="WordPress">
+                    <p>WordPress</p>
+                </div>
+                <div class="card">
+                    <img src="assets/icons/figma.png" alt="Figma">
+                    <p>Figma</p>
+                </div>
+                <div class="card">
+                    <img src="assets/icons/vscode.png" alt="VS Code">
+                    <p>VS Code</p>
+                </div>
+                <div class="card">
+                    <img src="assets/icons/nodejs.png" alt="Node.js">
+                    <p>Node.js</p>
+                </div>
+                <div class="card">
+                    <img src="assets/icons/palette.png" alt="Canva">
+                    <p>Canva</p>
+                </div>
+                <div class="card">
+                    <img src="assets/icons/azure.png" alt="Azure">
+                    <p>Azure</p>
+                </div>
+            </div>
+        </section>
 
-    <div>
-       <h2>Projects</h2>
-       <p>Active projects</p>
-       <ul>
-        <li>Hotel Feedback Form</li>
-        <li>Weather App</li>
-        <li>Football Stats Dasboard</li>
-       </ul>
-    
-    </div>
-</section>
+        <!-- CONTACT -->
+        <section id="contact" class="panel">
+            <p class="count">05 / 05</p>
+            <h2>Get in <span class="red">touch</span></h2>
+            <p class="sub">Have a project in mind? Or just want to say hello? Feel free to reach out.</p>
 
-<section title="about" class="about">
-    <div class="contacts">
-        <p>Have a project in mind? Or just want to say hello? Feel free to reach out.</p>
-        <!-- note that I added card list, this will create a grid of contact icons -->
-        <ul class="card-list">
-            <!-- remember to update these links with your actual contact information -->
-            <li><a href="mailto:bulumko@example.com">Email</a></li>
-            <li><a href="https://github.com/bmajaja" target="_blank">GitHub</a></li>
-            <li><a href="https://linkedin.com/in/bmajaja" target="_blank">LinkedIn</a></li>
-        </ul>
-    </div>
+            <ul class="card-list">
+                <li class="card"><a href="mailto:bmajaja.dev@gmail.com">Email</a></li>
+                <li class="card"><a href="https://github.com/bmajaja" target="_blank" rel="noopener">GitHub</a></li>
+                <li class="card"><a href="https://www.linkedin.com/in/bulumko-majaja-8252b7217" target="_blank" rel="noopener">LinkedIn</a></li>
+            </ul>
+        </section>
+    </main>
 
-    <!-- add actual about me text-->
-    <div class="about-me">
-      <h2>About Me</h2>
-    <p>Hello, I'm Bulumko! I'm a software developer who treats every project like a new trail to explore.</p>
-    <p>I build web applications, chase down tricky problems, and turn ideas into working products. I'm currently sharpening my skills in HTML, CSS, JavaScript and Python, and I pick projects that push me out of my comfort zone, because that's where the best learning happens.</p>
-    <p>My toolkit includes web development, coding and Microsoft Office, and I do my best work as part of a team, sharing the journey and the wins.</p>
-    <p>Off the keyboard, I've never been one to sit still. I represented the Eastern Cape on the provincial basketball team in 2010, lent my voice to a Nedbank recording in 2016, and earned a medal at the 15k marathon hosted by Hot 91.9 in 2018. That same year, I stepped up to audition at Mix FM 93.8. Whether it's a new language, a new course or a new stage, I'm always ready for the next challenge.</p>
-    
-    
-    </div>
-    <!-- in the future you will add experience here -->
-</section>
+    <footer>
+        <span class="brand-name">Bulumko Majaja</span>
+        <p>&copy; 2026. All rights reserved.</p>
+    </footer>
 
-
-<footer>
-    <span class="brand-name">Bulumko Majaja</span>
-    <!-- changed footer sentence, this sentence changes every year you make changes to the site-->
-    <p>&copy; 2026. All rights reserved.</p>
-</footer>
-<!-- added link to javascript -->
-<script src="js/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
